@@ -22,7 +22,7 @@
                         <RouterLink to="#">Про школу</RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="#">Контакти</RouterLink>
+                        <RouterLink to="/contact">Контакти</RouterLink>
                     </li>
                 </ul>
             </nav>
