@@ -1,47 +1,50 @@
 <template>
-    <h1 class="text-center text-xl font-bold">Про школу</h1>
-    <div class="flex gap-10 items-center justify-center">
-        <img src="https://placehold.co/500x300/png" alt="">
-        <div class="text-justify w-1/2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
-                molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
-                dolorum impedit esse?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
-                molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
-                dolorum impedit esse?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
-                molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
-                dolorum impedit esse?</p>
+    <div class="py-5 flex flex-col gap-7">
+        <h1 class="text-center text-xl font-bold">Про школу</h1>
+        <div class="flex gap-10 items-center justify-center">
+            <img src="https://placehold.co/500x300/png" alt="">
+            <div class="text-justify w-1/2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
+                    molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
+                    dolorum impedit esse?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
+                    molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
+                    dolorum impedit esse?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
+                    molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
+                    dolorum impedit esse?</p>
+            </div>
         </div>
-    </div>
-    <hr>
-    <div class="flex flex-row-reverse gap-10 items-center justify-center">
-        <img src="https://placehold.co/500x300/png" alt="">
-        <div class="text-justify w-1/2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
-                molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
-                dolorum impedit esse?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
-                molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
-                dolorum impedit esse?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
-                molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
-                dolorum impedit esse?</p>
+        <hr>
+        <div class="flex flex-row-reverse gap-10 items-center justify-center">
+            <img src="https://placehold.co/500x300/png" alt="">
+            <div class="text-justify w-1/2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
+                    molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
+                    dolorum impedit esse?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
+                    molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
+                    dolorum impedit esse?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
+                    molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
+                    dolorum impedit esse?</p>
+            </div>
         </div>
-    </div>
-    <hr>
-    <div class="flex gap-10 items-center justify-center">
-        <img src="https://placehold.co/500x300/png" alt="">
-        <div class="text-justify w-1/2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
-                molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
-                dolorum impedit esse?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
-                molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
-                dolorum impedit esse?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
-                molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
-                dolorum impedit esse?</p>
+        <hr>
+        <div class="flex gap-10 items-center justify-center">
+            <img src="https://placehold.co/500x300/png" alt="">
+            <div class="text-justify w-1/2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
+                    molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
+                    dolorum impedit esse?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
+                    molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
+                    dolorum impedit esse?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nam repudiandae. Quod amet, quis
+                    molestias sunt minima voluptatum dolor expedita, obcaecati fugiat ipsam aut, earum veniam sapiente
+                    dolorum impedit esse?</p>
+            </div>
         </div>
+
     </div>
 </template>

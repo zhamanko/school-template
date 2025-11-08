@@ -19,17 +19,21 @@ const slides = [
 <template>
   <!-- Слайдер зображень -->
   <div>
-    <Swiper :modules="modules" :slides-per-view="3" :space-between="30" navigation :pagination="{ clickable: true }"
-      :autoplay="{ delay: 3000, disableOnInteraction: false }" class="rounded-2xl">
+    <Swiper :modules="modules" :slides-per-view="1" :pagination="{ clickable: true }"
+      :autoplay="{ delay: 5000, disableOnInteraction: false }" class="h-160">
       <SwiperSlide v-for="slide in slides" :key="slide.id"
-        class="flex flex-col items-center justify-center bg-white rounded-xl shadow-lg overflow-hidden">
-        <img :src="slide.img" :alt="slide.title" class="w-full h-64 object-cover" />
-        <p class="p-4 text-lg font-semibold text-gray-800">{{ slide.title }}</p>
+        class="relative flex flex-col items-center justify-center bg-white overflow-hidden">
+        <img :src="slide.img" :alt="slide.title" class="w-full h-full object-cover" />
+        <div class="absolute bottom-0 right-0 left-0 h-1/4 bg-linear-to-t from-black/60 to-transparent text-white
+        px-4 flex flex-col justify-center gap-5">
+          <p class="font-bold text-xl">{{ slide.title }}</p>
+          <p class="opacity-50">Пн, 12.11.2025</p>
+        </div>
       </SwiperSlide>
     </Swiper>
   </div>
   <!-- Інформація про школу -->
-  <div class="flex items-center gap-10">
+  <div class="flex items-center gap-10 px-5">
     <img src="https://placehold.co/1200x800/png" class="w-1/2 rounded-lg" alt="">
     <div class="flex flex-col gap-4">
       <div class="text-justify">
@@ -49,7 +53,7 @@ const slides = [
     </div>
   </div>
   <!-- Останні новини -->
-  <div>
+  <div class="px-5 pb-5">
     <h2 class="font-bold text-xl text-center mb-2">Останні новини</h2>
     <div>
       <Swiper :modules="modules" :slides-per-view="3" :space-between="30" navigation :pagination="{ clickable: true }"

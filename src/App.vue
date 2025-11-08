@@ -8,7 +8,7 @@ import Footer from './components/Footer.vue'
 <template>
   <Header />
 
-  <main class="bg-gray-300 mx-20 my-23 py-8 px-12 flex flex-col gap-8 shadow-2xl rounded">
+  <main class="bg-gray-300 mx-20 my-23 flex flex-col gap-8 shadow-2xl rounded">
     <RouterView />
   </main>
 
