@@ -9,11 +9,11 @@
                     <li>
                         <RouterLink to="/">Головна</RouterLink>
                     </li>
-                    <li>
+                    <!-- <li>
                         <RouterLink to="#">Навчання</RouterLink>
-                    </li>
+                    </li> -->
                     <li>
-                        <RouterLink to="#">Новини і події</RouterLink>
+                        <RouterLink to="/news-and-events">Новини і події</RouterLink>
                     </li>
                     <li>
                         <RouterLink to="/gallary">Галерея</RouterLink>
