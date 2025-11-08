@@ -19,7 +19,7 @@
                         <RouterLink to="/gallary">Галерея</RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="#">Про школу</RouterLink>
+                        <RouterLink to="/about">Про школу</RouterLink>
                     </li>
                     <li>
                         <RouterLink to="/contact">Контакти</RouterLink>

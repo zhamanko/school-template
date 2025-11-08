@@ -44,7 +44,7 @@ const slides = [
           suscipit id perspiciatis.</p>
       </div>
       <div class="text-end">
-        <button class="bg-blue-400 px-4 py-2 rounded">Дізнатися більше</button>
+        <RouterLink to="/about" class="bg-blue-400 text-white px-4 py-2 rounded">Дізнатися більше</RouterLink>
       </div>
     </div>
   </div>
