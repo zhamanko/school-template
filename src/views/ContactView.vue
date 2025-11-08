@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="py-2 md:py-12 lg:py-18">
         <h1 class="text-center font-bold text-lg">Контакти</h1>
         <div class="ml-15">
             <ul class="space-y-2">
