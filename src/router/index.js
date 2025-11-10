@@ -4,6 +4,7 @@ import GalleryView from '@/views/GalleryView.vue'
 import ContactView from '@/views/ContactView.vue'
 import AboutView from '@/views/AboutView.vue'
 import NewsAndEventsView from '@/views/NewsAndEventsView.vue'
+import NewsAndEventsInfoView from '@/views/NewsAndEventsInfoView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,11 @@ const router = createRouter({
       name: 'contact',
       component: ContactView,
     },
+    {
+      path: '/info-news-or-evets/:id',
+      name: 'info-news-and-events',
+      component: NewsAndEventsInfoView,
+    }
   ],
 })
 

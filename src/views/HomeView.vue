@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 
@@ -35,6 +36,18 @@ const slides = [
     descrtiption: 'Запрошуємо всіх на щорічний шкільний концерт, де виступатимуть наші талановиті учні.',
     date: '12.09.2023',
   },
+  {
+    id: 5, img: 'https://placehold.co/500x600/png',
+    title: 'Шкільний концерт',
+    descrtiption: 'Запрошуємо всіх на щорічний шкільний концерт, де виступатимуть наші талановиті учні.',
+    date: '12.09.2023',
+  },
+  {
+    id: 6, img: 'https://placehold.co/500x600/png',
+    title: 'Шкільний концерт',
+    descrtiption: 'Запрошуємо всіх на щорічний шкільний концерт, де виступатимуть наші талановиті учні.',
+    date: '12.09.2023',
+  },
 ]
 </script>
 
@@ -42,15 +55,17 @@ const slides = [
   <!-- Слайдер зображень -->
   <div>
     <Swiper :modules="modules" :slides-per-view="1" :pagination="{ clickable: true }"
-      :autoplay="{ delay: 5000, disableOnInteraction: false }" class="h-160">
+      :autoplay="{ delay: 5000, disableOnInteraction: false }" navigation class="h-160">
       <SwiperSlide v-for="slide in slides" :key="slide.id"
-        class="relative flex flex-col items-center justify-center bg-white overflow-hidden">
-        <img :src="slide.img" :alt="slide.title" class="w-full h-full object-cover" />
-        <div class="absolute bottom-0 right-0 left-0 h-1/4 bg-linear-to-t from-black/60 to-transparent text-white
+        class="relative flex flex-col items-center justify-center bg-white overflow-hidden rounded-tr rounded-tl">
+        <RouterLink :to="`/info-news-or-evets/${slide.id}`" class="absolute inset-0 z-10">
+          <img :src="slide.img" :alt="slide.title" class="w-full h-full object-cover" />
+          <div class="absolute bottom-0 right-0 left-0 h-1/4 bg-linear-to-t from-black/60 to-transparent text-white
         px-4 flex flex-col justify-center gap-5">
-          <p class="font-bold text-xl">{{ slide.title }}</p>
-          <p class="opacity-50">Пн, 12.11.2025</p>
-        </div>
+            <p class="font-bold text-xl">{{ slide.title }}</p>
+            <p class="opacity-50">Пн, 12.11.2025</p>
+          </div>
+        </RouterLink>
       </SwiperSlide>
     </Swiper>
   </div>
@@ -82,7 +97,8 @@ const slides = [
         :autoplay="{ delay: 3000, disableOnInteraction: false }">
         <SwiperSlide v-for="slide in slides" :key="slide.id"
           class="flex flex-col items-center justify-center bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-          <NewsAndEventsCard :img="slide.img" :title="slide.title" :descrtiption="slide.descrtiption" :date="slide.date"/>
+          <NewsAndEventsCard :id="slide.id" :img="slide.img" :title="slide.title" :descrtiption="slide.descrtiption"
+            :date="slide.date" />
         </SwiperSlide>
       </Swiper>
     </div>
