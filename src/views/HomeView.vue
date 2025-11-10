@@ -2,6 +2,8 @@
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 
+import NewsAndEventsCard from '@/components/NewsAndEventsCard.vue'
+
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -9,10 +11,30 @@ import 'swiper/css/pagination'
 const modules = [Navigation, Pagination, Autoplay]
 
 const slides = [
-  { id: 1, title: 'Шкільний концерт', img: 'https://placehold.co/500x600/png' },
-  { id: 2, title: 'Урок музики', img: 'https://placehold.co/500x600/png' },
-  { id: 3, title: 'Наш клас', img: 'https://placehold.co/500x600/png' },
-  { id: 4, title: 'Випуск 2024', img: 'https://placehold.co/500x600/png' },
+  {
+    id: 1, img: 'https://placehold.co/500x600/png',
+    title: 'Шкільний концерт',
+    descrtiption: 'Запрошуємо всіх на щорічний шкільний концерт, де виступатимуть наші талановиті учні.',
+    date: '12.09.2023',
+  },
+  {
+    id: 2, img: 'https://placehold.co/500x600/png',
+    title: 'Шкільний концерт',
+    descrtiption: 'Запрошуємо всіх на щорічний шкільний концерт, де виступатимуть наші талановиті учні.',
+    date: '12.09.2023',
+  },
+  {
+    id: 3, img: 'https://placehold.co/500x600/png',
+    title: 'Шкільний концерт',
+    descrtiption: 'Запрошуємо всіх на щорічний шкільний концерт, де виступатимуть наші талановиті учні.',
+    date: '12.09.2023',
+  },
+  {
+    id: 4, img: 'https://placehold.co/500x600/png',
+    title: 'Шкільний концерт',
+    descrtiption: 'Запрошуємо всіх на щорічний шкільний концерт, де виступатимуть наші талановиті учні.',
+    date: '12.09.2023',
+  },
 ]
 </script>
 
@@ -57,11 +79,10 @@ const slides = [
     <h2 class="font-bold text-xl text-center mb-2">Останні новини</h2>
     <div>
       <Swiper :modules="modules" :slides-per-view="3" :space-between="30" navigation :pagination="{ clickable: true }"
-        :autoplay="{ delay: 3000, disableOnInteraction: false }" class="rounded-2xl">
+        :autoplay="{ delay: 3000, disableOnInteraction: false }">
         <SwiperSlide v-for="slide in slides" :key="slide.id"
-          class="flex flex-col items-center justify-center bg-white rounded-xl shadow-lg overflow-hidden">
-          <img :src="slide.img" :alt="slide.title" class="w-full h-64 object-cover" />
-          <p class="p-4 text-lg font-semibold text-gray-800">{{ slide.title }}</p>
+          class="flex flex-col items-center justify-center bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+          <NewsAndEventsCard :img="slide.img" :title="slide.title" :descrtiption="slide.descrtiption" :date="slide.date"/>
         </SwiperSlide>
       </Swiper>
     </div>
