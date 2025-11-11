@@ -1,8 +1,26 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, watch, onUnmounted } from 'vue'
+import { useRoute } from 'vue-router'
 import NavMenu from './NavMenu.vue'
 
 const open = ref(false)
+const route = useRoute()
+
+watch(route, () => {
+  open.value = false
+})
+
+watch(open, (isOpen) => {
+  if (isOpen) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = ''
+  }
+})
+
+onUnmounted(() => {
+  document.body.style.overflow = ''
+})
 </script>
 
 <template>
