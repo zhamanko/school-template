@@ -20,8 +20,8 @@ const img = [
 </script>
 
 <template>
-    <div class="flex p-4 gap-6">
-        <div class="w-6/5  sticky top-4 h-fit">
+    <div class="flex flex-col xl:flex-row p-4 gap-6">
+        <div class="xl:w-6/5  xl:sticky xl:top-4 h-fit">
             <Swiper :effect="'coverflow'" :grabCursor="true" :centeredSlides="true" :slidesPerView="'auto'"
                 :coverflowEffect="{
                     rotate: 50,

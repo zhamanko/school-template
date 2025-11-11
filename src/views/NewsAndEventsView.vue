@@ -40,7 +40,7 @@ const items = [
             <button class="bg-blue-500 w-full py-4 text-white rounded-tl">Новини</button>
             <button class="bg-blue-400 w-full py-4 text-white rounded-tr">Події</button>
         </div>
-        <div class="mt-6 grid grid-cols-3 gap-8 px-5 pb-5">
+        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 px-5 pb-5">
             <NewsAndEventsCard v-for="item in items" :key="item.id" :id="item.id" :img="item.img" :title="item.title"
                 :descrtiption="item.descrtiption" :date="item.date" />
         </div>

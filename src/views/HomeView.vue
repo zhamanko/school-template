@@ -70,8 +70,8 @@ const slides = [
     </Swiper>
   </div>
   <!-- Інформація про школу -->
-  <div class="flex items-center gap-10 px-5">
-    <img src="https://placehold.co/1200x800/png" class="w-1/2 rounded-lg" alt="">
+  <div class="flex flex-col lg:flex-row items-center gap-10 px-5">
+    <img src="https://placehold.co/1200x800/png" class="sm:3/4 md:w-2/3 lg:w-1/2 rounded-lg" alt="">
     <div class="flex flex-col gap-4">
       <div class="text-justify">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic fuga nobis laboriosam. Expedita ducimus quos
@@ -94,7 +94,20 @@ const slides = [
     <h2 class="font-bold text-xl text-center mb-2">Останні новини</h2>
     <div>
       <Swiper :modules="modules" :slides-per-view="3" :space-between="30" navigation :pagination="{ clickable: true }"
-        :autoplay="{ delay: 3000, disableOnInteraction: false }">
+        :autoplay="{ delay: 3000, disableOnInteraction: false }" :breakpoints="{
+          0: {
+            slidesPerView: 1, // мобільні телефони
+            spaceBetween: 10,
+          },
+          600: {
+            slidesPerView: 2, // планшети
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3, // комп’ютери
+            spaceBetween: 30,
+          }
+        }">
         <SwiperSlide v-for="slide in slides" :key="slide.id"
           class="flex flex-col items-center justify-center bg-white rounded-xl shadow-lg overflow-hidden mb-10">
           <NewsAndEventsCard :id="slide.id" :img="slide.img" :title="slide.title" :descrtiption="slide.descrtiption"
