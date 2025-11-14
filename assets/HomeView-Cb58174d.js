@@ -1,0 +1,1 @@
+import{_ as s,c as n,b as o,o as r}from"./index-Bb40OS7c.js";const t={},c={class:"bg-gray-600 h-screen"};function a(_,e){return r(),n("div",c,[...e[0]||(e[0]=[o("h1",null,"MainAdmin",-1)])])}const d=s(t,[["render",a]]);export{d as default};
